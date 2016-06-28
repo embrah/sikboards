@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@font-face {
+  font-family: 'SikFont';
+  src: url(../../fonts/NexaBold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'SikFont';
+  src: url(../../fonts/NexaBold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'SikFont';
+  src: url(../../fonts/NexaBold.woff2) format("woff2"); }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.8rem;
+  font-family: "SikFont"; }
+
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 4rem; }
+
+h3 {
+  font-size: 3.2rem; }
+
+p {
+  line-height: 1.5;
+  color: #94989C; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+button {
+  font-family: Montserrat; }
+
+h1, h2, h3 {
+  font-family: "SikFont"; }
+
+a {
+  font-family: Montserrat; }
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #E84310;
+  margin: 10px; }
+
+div + div {
+  background: #94989C; }
