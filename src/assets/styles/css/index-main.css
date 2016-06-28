@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @font-face {
   font-family: 'SikFont';
   src: url(../../fonts/NexaBold.woff2) format("woff2"); }
@@ -40,17 +41,50 @@ a {
 button {
   font-family: Montserrat; }
 
-h1, h2, h3 {
-  font-family: "SikFont"; }
+@font-face {
+  font-family: 'SikFont';
+  src: url(../../fonts/NexaBold.woff2) format("woff2"); }
 
-a {
-  font-family: Montserrat; }
-
-div {
-  width: 100px;
-  height: 100px;
+.btn-default, .btn-medium, .btn-small {
   background: #E84310;
-  margin: 10px; }
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  transition: .2s all ease-in; }
+  .btn-default:hover, .btn-medium:hover, .btn-small:hover {
+    opacity: .8; }
+  .btn-default:focus, .btn-medium:focus, .btn-small:focus {
+    outline: none; }
 
-div + div {
-  background: #94989C; }
+.btn-medium {
+  font-size: 1.4rem;
+  padding: 8px 13px; }
+
+.btn-small {
+  font-size: 1.2rem;
+  padding: 4px 7px; }
+
+input[type="text"] {
+  border: none;
+  border: 1px solid #94989C;
+  color: #181818;
+  font-family: "SikFont";
+  font-size: 1.8rem;
+  padding: 7px 4px;
+  text-transform: capitalize;
+  transition: .2s all ease-in; }
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #E84310;
+    box-shadow: 0 0 2px 1px rgba(232, 67, 16, 0.5); }
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+
+button {
+  margin: 10px; }

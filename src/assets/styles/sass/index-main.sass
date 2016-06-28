@@ -1,20 +1,12 @@
 @import 'fonts'
 @import 'variables'
 @import 'typography'
+@import 'elements'
 
+body
+	display: flex
+	flex-flow: column wrap
+	align-items: center
 
-h1,h2,h3
-	font-family: $main-font
-
-a
-	font-family: $links-font
-
-
-div
-	width: 100px
-	height: 100px
-	background: $orange-500
+button
 	margin: 10px
-
-div + div
-	background: $grey-300

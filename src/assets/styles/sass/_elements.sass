@@ -1,0 +1,43 @@
+@import 'variables'
+
+.btn-default
+	background: $orange-500
+	border: none
+	color: #fff
+	cursor: pointer
+	font-size: 2rem
+	padding: 15px 25px
+	text-transform: uppercase
+	transition: .2s all ease-in
+
+	&:hover
+		opacity: .8
+
+	&:focus
+		outline: none
+
+.btn-medium
+	@extend .btn-default
+	font-size: 1.4rem
+	padding: 8px 13px
+
+.btn-small
+	@extend .btn-default
+	font-size: 1.2rem
+	padding: 4px 7px
+
+input[type="text"]
+	border: none
+	border: 1px solid $grey-300
+	color: $black-500
+	font-family: $main-font
+	font-size: 1.8rem
+	padding: 7px 4px
+	text-transform: capitalize
+	transition: .2s all ease-in
+
+
+	&:focus
+		outline: none
+		border-color: $orange-500
+		box-shadow: 0 0 2px 1px transparentize($orange-500,.5) 
