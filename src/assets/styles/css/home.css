@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@font-face {
+  font-family: 'SikFont';
+  src: url(../../fonts/NexaBold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'SikFont';
+  src: url(../../fonts/NexaBold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'SikFont';
+  src: url(../../fonts/NexaBold.woff2) format("woff2"); }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.8rem;
+  font-family: "SikFont"; }
+
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 4rem; }
+
+h3 {
+  font-size: 3.2rem; }
+
+p {
+  line-height: 1.5;
+  color: #94989C; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+button {
+  font-family: Montserrat; }
+
+@font-face {
+  font-family: 'SikFont';
+  src: url(../../fonts/NexaBold.woff2) format("woff2"); }
+
+.btn-default, .btn-medium, .btn-small, .btn-secondary {
+  background: #E84310;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  transition: .2s all ease-in; }
+  .btn-default:hover, .btn-medium:hover, .btn-small:hover, .btn-secondary:hover {
+    opacity: .8; }
+  .btn-default:focus, .btn-medium:focus, .btn-small:focus, .btn-secondary:focus {
+    outline: none; }
+
+.btn-medium {
+  font-size: 1.4rem;
+  padding: 8px 13px; }
+
+.btn-small {
+  font-size: 1.2rem;
+  padding: 4px 7px; }
+
+.btn-secondary {
+  background: transparent;
+  color: #181818;
+  border: 1px solid; }
+  .btn-secondary:hover {
+    border-color: #94989C; }
+
+input[type="text"] {
+  border: none;
+  border: 1px solid #94989C;
+  color: #181818;
+  font-family: "SikFont";
+  font-size: 1.8rem;
+  padding: 7px 4px;
+  text-transform: capitalize;
+  transition: .2s all ease-in; }
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #E84310;
+    box-shadow: 0 0 2px 1px rgba(232, 67, 16, 0.5); }
+
+nav, nav ul, .page-wrap .intro, .page-wrap .intro .blog .row {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.page-wrap, .page-wrap header, .page-wrap .intro .info, .page-wrap .intro .blog, .page-wrap .intro .blog .row .title {
+  display: flex;
+  flex-flow: column nowrap; }
+
+.toggle {
+  display: none; }
+
+.toggle:checked + nav {
+  transform: translateY(0); }
+
+.toggle:checked + nav img {
+  order: -1; }
+
+nav {
+  background: #2a2a2a;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.3s all cubic-bezier(1, 0.8, 0.2, 0.1);
+  text-transform: uppercase; }
+  @media all and (max-width: 853px) {
+    nav {
+      flex-flow: column nowrap;
+      text-align: center;
+      transform: translateY(-140px); }
+      nav ul {
+        flex-flow: column nowrap; }
+      nav img {
+        order: 1; } }
+  nav ul {
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    nav ul a {
+      color: #fff;
+      padding: 10px 15px;
+      transition: 0.3s all cubic-bezier(0.2, 0.1, 0.4, 1); }
+      nav ul a:hover {
+        color: #E84310;
+        border-bottom: 3px solid; }
+        @media all and (max-width: 743px) {
+          nav ul a:hover {
+            border-bottom: none; } }
+
+.page-wrap h1, .page-wrap h3 {
+  margin: 0; }
+
+.page-wrap header {
+  margin-top: 30px;
+  background: url(../../images/skater.jpg) no-repeat center top/cover;
+  color: #fff;
+  align-items: center;
+  padding: 400px 0; }
+  .page-wrap header h1 {
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: #E84310;
+    opacity: .9; }
+  .page-wrap header a {
+    color: #fff;
+    font-size: 1.5em; }
+
+@media all and (max-width: 1170px) {
+  .page-wrap .intro {
+    flex-flow: column nowrap; }
+    .page-wrap .intro .info {
+      padding: 25px 0; } }
+
+@media all and (max-width: 400px) {
+  .page-wrap .intro h3 {
+    font-size: 2.5rem;
+    text-align: center; }
+  .page-wrap .intro p {
+    font-size: 1.5rem; } }
+
+.page-wrap .intro .info {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background: url(../../images/boards.jpg) no-repeat center top/cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  color: #fff; }
+  .page-wrap .intro .info p {
+    max-width: 60%;
+    color: #fff;
+    text-align: center; }
+
+.page-wrap .intro .blog {
+  flex: 1; }
+  @media all and (max-width: 400px) {
+    .page-wrap .intro .blog .row {
+      flex-flow: column wrap; }
+      .page-wrap .intro .blog .row .image {
+        display: none; } }
+  .page-wrap .intro .blog .row h3 {
+    font-size: 2rem; }
+  .page-wrap .intro .blog .row .title {
+    flex: 1;
+    height: 300px;
+    background: url(../../images/decks.jpg) no-repeat center top/cover;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(42, 42, 42, 0.7);
+    color: #fff;
+    overflow: hidden; }
+    .page-wrap .intro .blog .row .title h3 {
+      text-transform: capitalize; }
+    .page-wrap .intro .blog .row .title p {
+      color: #fff;
+      padding: 0 15px;
+      text-align: center;
+      transition: .3s all ease-in;
+      opacity: 0;
+      transform: translateY(200px); }
+    .page-wrap .intro .blog .row .title:hover p {
+      opacity: 1;
+      transform: translateY(0); }
+  .page-wrap .intro .blog .row .first-deck {
+    background: url(../../images/first-deck.jpg) no-repeat center top/cover; }
+  .page-wrap .intro .blog .row .first-deck + .image {
+    background: url(../../images/boarding.jpg) no-repeat center top/cover; }
+  .page-wrap .intro .blog .row .cruise {
+    background: url(../../images/tricking.jpg) no-repeat center top/cover; }
+  .page-wrap .intro .blog .row .cruise + .image {
+    background: url(../../images/ramp.jpg) no-repeat center top/cover;
+    order: -1; }
+  .page-wrap .intro .blog .row .image {
+    flex: 1;
+    height: 300px;
+    background: url(../../images/boards.jpg) no-repeat center top/cover; }

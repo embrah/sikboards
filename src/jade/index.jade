@@ -1,16 +1,15 @@
-//current task - choose typography 
 doctype html
 html
 head
 	meta(charset="UTF-8")
+	link(rel="stylesheet", href="assets/styles/css/normalize.css")
 	link(rel="stylesheet", href="assets/styles/css/index-main.css")
 	title sikboards
 body
-	button.btn-default i am button
-	button.btn-medium i am button
-	button.btn-small i am button
-	label(for="foo") I am label
-	input(type="text", name="foo" id="foo")
-	input(type="checkbox")
-	input(type="radio", name="")
-	
+	.wrapper
+		video(autoplay="true" loop muted )
+			source(src="assets/video/vid.mp4" type="video/mp4")
+		.cont
+			h1 introducing sikboards
+			a(href="home.html")
+				button.btn-default find out more

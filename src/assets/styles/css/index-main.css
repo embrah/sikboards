@@ -45,7 +45,7 @@ button {
   font-family: 'SikFont';
   src: url(../../fonts/NexaBold.woff2) format("woff2"); }
 
-.btn-default, .btn-medium, .btn-small {
+.btn-default, .btn-medium, .btn-small, .btn-secondary {
   background: #E84310;
   border: none;
   color: #fff;
@@ -54,9 +54,9 @@ button {
   padding: 15px 25px;
   text-transform: uppercase;
   transition: .2s all ease-in; }
-  .btn-default:hover, .btn-medium:hover, .btn-small:hover {
+  .btn-default:hover, .btn-medium:hover, .btn-small:hover, .btn-secondary:hover {
     opacity: .8; }
-  .btn-default:focus, .btn-medium:focus, .btn-small:focus {
+  .btn-default:focus, .btn-medium:focus, .btn-small:focus, .btn-secondary:focus {
     outline: none; }
 
 .btn-medium {
@@ -66,6 +66,13 @@ button {
 .btn-small {
   font-size: 1.2rem;
   padding: 4px 7px; }
+
+.btn-secondary {
+  background: transparent;
+  color: #181818;
+  border: 1px solid; }
+  .btn-secondary:hover {
+    border-color: #94989C; }
 
 input[type="text"] {
   border: none;
@@ -81,10 +88,53 @@ input[type="text"] {
     border-color: #E84310;
     box-shadow: 0 0 2px 1px rgba(232, 67, 16, 0.5); }
 
-body {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center; }
+html {
+  height: 100%; }
 
-button {
-  margin: 10px; }
+body {
+  height: 100%; }
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  align-items: center; }
+  .wrapper video {
+    z-index: -2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    height: auto; }
+  .wrapper .cont {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 0 0 3rem 4rem; }
+    @media all and (max-width: 400px) and (max-width: 524px) {
+      .wrapper .cont {
+        padding: 0 15px;
+        justify-content: center;
+        align-items: center; } }
+    .wrapper .cont h1 {
+      font-size: 7rem;
+      margin: 0;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 900; }
+      @media all and (max-width: 524px) {
+        .wrapper .cont h1 {
+          font-size: 4.5rem;
+          text-align: center; } }
+      @media all and (max-width: 400px) {
+        .wrapper .cont h1 {
+          font-size: 3.5rem;
+          text-align: center; } }
+    @media all and (max-width: 400px) {
+      .wrapper .cont button.btn-default, .wrapper .cont button.btn-medium, .wrapper .cont button.btn-small, .wrapper .cont button.btn-secondary {
+        font-size: 1.4rem;
+        padding: 8px 13px; } }
