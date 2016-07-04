@@ -88,11 +88,11 @@ input[type="text"] {
     border-color: #E84310;
     box-shadow: 0 0 2px 1px rgba(232, 67, 16, 0.5); }
 
-nav, nav ul, .page-wrap .intro, .page-wrap .intro .blog .row {
+nav, nav ul, .page-wrap .intro, .page-wrap .intro .blog .row, .page-wrap footer {
   display: flex;
   flex-flow: row nowrap; }
 
-.page-wrap, .page-wrap header, .page-wrap .intro .info, .page-wrap .intro .blog, .page-wrap .intro .blog .row .title {
+.page-wrap, .page-wrap header, .page-wrap .intro .info, .page-wrap .intro .blog, .page-wrap .intro .blog .row .title, .page-wrap .signup, .page-wrap .signup form {
   display: flex;
   flex-flow: column nowrap; }
 
@@ -227,3 +227,39 @@ nav {
     flex: 1;
     height: 300px;
     background: url(../../images/boards.jpg) no-repeat center top/cover; }
+
+.page-wrap .signup {
+  background: url(../../images/feet.jpg) no-repeat center top/cover fixed;
+  padding: 50px 0;
+  align-items: center; }
+  .page-wrap .signup form {
+    align-items: center;
+    max-width: 400px; }
+    .page-wrap .signup form h3 {
+      background: #E84310;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      align-self: stretch; }
+    .page-wrap .signup form label {
+      background: #fff;
+      align-self: stretch;
+      text-align: center;
+      padding: 10px 0; }
+    .page-wrap .signup form button {
+      align-self: stretch; }
+
+.page-wrap footer {
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+  background: #2a2a2a; }
+  @media all and (max-width: 660px) {
+    .page-wrap footer {
+      flex-flow: column wrap;
+      padding-top: 20px;
+      text-align: center; } }
+  .page-wrap footer .social-media {
+    color: #94989C; }
+    .page-wrap footer .social-media i {
+      padding: 0 10px; }

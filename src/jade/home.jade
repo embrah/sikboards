@@ -6,6 +6,8 @@ head
 	link(rel="stylesheet", href="assets/styles/css/home.css")
 	script(src="assets/scripts/jquery-3.0.0.min.js")
 	script(src="assets/scripts/navMenu.js")
+	script(src="assets/scripts/form.js")
+	script(src="https://use.fontawesome.com/a8ebd68736.js")
 	title sikboards
 
 body
@@ -51,7 +53,29 @@ body
 						h3 cruise or trick?
 						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem aliquam optio, nam eius, nemo ratione.
 					.image
-					
+		
+		section.signup
+			form(action="submit")
+				h3 hello
+				label(for="") My name is
+				input(type="text")
+				label(for="") Surname
+				input(type="text")
+				label(for="") E-mail
+				input(type="text")
+				button.btn-medium submit
+
+		footer
+			.social-media
+				i.fa.fa-facebook
+				i.fa.fa-twitter
+				i.fa.fa-instagram
+				i.fa.fa-youtube
+
+			p Copyright &reg; 2016 Emsign Limitless Web Development
+
+
+
 				
 
 				
